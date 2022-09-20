@@ -11,3 +11,19 @@ body {
     background-image: url("/assets/home/background-home-desktop.jpg");
     background-color: #0B0D17;
 }
+
+body main {
+    display: flex;
+    flex-direction: row;
+}
+
+#explore {
+    display: flex;
+    width: 150px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    background-color: antiquewhite;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
