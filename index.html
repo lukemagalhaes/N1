@@ -10,18 +10,22 @@
     <title>Home - Space Tourism</title>
 </head>
 <body>
-    <header>
-        <img id="logo" src="assets/shared/logo.svg" alt="">
-        <div id="line"></div>
+    <header class="navbar">
+        <div>
+            <img id="logo" src="assets/shared/logo.svg" alt="">
+            <svg id="line" width="40vw" height="1">
+                <rect width="40vw" height="1" style="fill:rgb(255, 255, 255);"/>
+            </svg>
+        </div>
         <nav>
             <ul>
-                <li><b>00</b> HOME</li>
-                <li><b>01</b> DESTINATION</li>
-                <li><b>02</b> CREW</li>
-                <li><b>03</b> TECHNOLOGY</li>
+                <li class="selected"><b>00</b> HOME</li>
+                <li class="unselected"><b>01</b> DESTINATION</li>
+                <li class="unselected"><b>02</b> CREW</li>
+                <li class="unselected"><b>03</b> TECHNOLOGY</li>
             </ul>
         </nav>
-        <div class="hamburguer"><img src="assets/shared/icon-hamburger.svg" alt=""></div>
+        <!--<div class="hamburguer"><img src="assets/shared/icon-hamburger.svg" alt=""></div>-->
     </header>
     <main>
         <article>
