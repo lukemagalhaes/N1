@@ -27,7 +27,7 @@ body {
 }
 
 #logo {
-    width: 8%;
+    width: 4vw;
     aspect-ratio: 1;
 }
 
@@ -83,4 +83,28 @@ body {
 
 .hamburguer img {
     display: none;
+}
+
+@media (max-width: 768px) {
+    .navbar nav ul li b{
+        display: none;
+    }
+
+    body {
+        background-image: url(/assets/home/background-home-tablet.jpg);
+    }
+
+    #logo {
+        width: 6vw;
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        background-image: url(/assets/home/background-home-mobile.jpg);
+    }
+
+    #logo {
+        width: 8vw;
+    }
 }
