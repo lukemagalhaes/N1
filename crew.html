@@ -5,23 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/crew.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/crew.css">
     <title>Crew</title>
 </head>
 <body>
-    <header>
-        <img id="logo" src="assets/shared/logo.svg" alt="">
-        <div id="line"></div>
+    <header class="navbar">
+        <div>
+            <img id="logo" src="assets/shared/logo.svg" alt="">
+            <svg id="line" width="40vw" height="1">
+                <rect width="40vw" height="1" style="fill:rgb(255, 255, 255);"/>
+            </svg>
+        </div>
         <nav>
             <ul>
-                <li><b>00</b> HOME</li>
-                <li><b>01</b> DESTINATION</li>
-                <li><b>02</b> CREW</li>
-                <li><b>03</b> TECHNOLOGY</li>
+                <li class="unselected" ><a href="index.html"><b>00</b> HOME</a></li>
+                <li class="unselected" ><a href="destination.html"><b>01</b> DESTINATION</a></li>
+                <li class="selected" ><a href="crew.html"><b>02</b> CREW</a></li>
+                <li class="unselected" ><a href="technology.html"><b>03</b> TECHNOLOGY</a></li>
             </ul>
         </nav>
-        <div class="hamburguer"><img src="assets/shared/icon-hamburger.svg" alt=""></div>
+        <!--<div class="hamburguer"><img src="assets/shared/icon-hamburger.svg" alt=""></div>-->
     </header>
     <main>
         <header>
