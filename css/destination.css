@@ -32,6 +32,7 @@ body {
 
 .texto2{
     display: flex;
+    list-style-type: none;
     flex-direction: row;
     margin-bottom: 60px;
     text-decoration: none;

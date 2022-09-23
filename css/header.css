@@ -33,7 +33,7 @@ body {
 
 #line {
     position: relative;
-    left: 7%;
+    left: 3.5%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -104,19 +104,12 @@ body {
         display: none;
     }
 
-    body {
-        background-image: url(/assets/home/background-home-tablet.jpg);
-    }
-
     #logo {
         width: 6vw;
     }
 }
 
 @media (max-width: 375px) {
-    body {
-        background-image: url(/assets/home/background-home-mobile.jpg);
-    }
 
     #logo {
         width: 8vw;
