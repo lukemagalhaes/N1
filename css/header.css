@@ -28,7 +28,6 @@ body {
 
 #logo {
     width: 4vw;
-    aspect-ratio: 1;
 }
 
 #line {
@@ -88,7 +87,6 @@ body {
 
 .unselected {
     border-bottom: 3px solid #d0d6f900;
-
 }
 
 .unselected:hover{
@@ -100,9 +98,9 @@ body {
 }
 
 @media (max-width: 768px) {
-    .navbar nav ul li b{
+    /*.navbar nav ul li b{
         display: none;
-    }
+    }*/
 
     #logo {
         width: 6vw;
@@ -112,6 +110,44 @@ body {
 @media (max-width: 375px) {
 
     #logo {
-        width: 8vw;
+        width: 10vw;
     }
+    /*
+    #line {
+        display: none;
+    }
+
+    .menu-list {
+        position: fixed;
+        inset: 0 0 0 30%;
+        padding: 15vh 10vw;
+        list-style-type: none;
+        justify-content: space-around;
+        background-color: rgb(16, 14, 45);
+        transform: translateX(100%);
+    }
+
+    .menu-list li {
+        padding: 10%;
+    }
+
+    .menu-list a {
+        text-decoration: none;
+        color: #D0D6F9;
+    }
+
+    .selected {
+        border-bottom: none;
+        border-right: 3px solid #d0d6f9;
+    }
+
+    .unselected {
+        border-bottom: none;
+        border-right: 3px solid #d0d6f900;
+    }
+
+    .unselected:hover{
+        border-bottom: none;
+        border-right: 3px solid #d2d8f980;
+    }*/
 }
