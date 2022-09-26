@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.navbar {
+    padding: 1% 0% 1% 5%;
+    width: 95%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: monospace;
+    color: #D0D6F9;
+}
+
+.navbar div {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 4vw;
+}
+
+#line {
+    position: relative;
+    left: 3.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    z-index: 1;
+}
+
+.navbar nav {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 5%;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);
+}
+
+.navbar nav ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+}
+
+.navbar nav ul li {
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.navbar nav ul li a{
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #D0D6F9;
+    text-decoration: none;
+    gap: 1em;
+}
+
+.selected {
+    border-bottom: 3px solid #D0D6F9;
+}
+
+.unselected {
+    border-bottom: 3px solid #d0d6f900;
+}
+
+.unselected:hover{
+    border-bottom: 3px solid #d2d8f980;
+}
+
+.hamburguer img {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    /*.navbar nav ul li b{
+        display: none;
+    }*/
+
+    #logo {
+        width: 6vw;
+    }
+}
+
+@media (max-width: 375px) {
+
+    #logo {
+        width: 10vw;
+    }
+    /*
+    #line {
+        display: none;
+    }
+
+    .menu-list {
+        position: fixed;
+        inset: 0 0 0 30%;
+        padding: 15vh 10vw;
+        list-style-type: none;
+        justify-content: space-around;
+        background-color: rgb(16, 14, 45);
+        transform: translateX(100%);
+    }
+
+    .menu-list li {
+        padding: 10%;
+    }
+
+    .menu-list a {
+        text-decoration: none;
+        color: #D0D6F9;
+    }
+
+    .selected {
+        border-bottom: none;
+        border-right: 3px solid #d0d6f9;
+    }
+
+    .unselected {
+        border-bottom: none;
+        border-right: 3px solid #d0d6f900;
+    }
+
+    .unselected:hover{
+        border-bottom: none;
+        border-right: 3px solid #d2d8f980;
+    }*/
+}
