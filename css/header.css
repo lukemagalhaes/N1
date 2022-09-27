@@ -29,6 +29,12 @@ body {
 }
 
 #logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo, #logo img {
     width: 3vw;
 }
 
@@ -106,7 +112,11 @@ body {
         display: none;
     }
 
-    #logo {
+    #line {
+        display: none;
+    }
+
+    #logo, #logo img {
         width: 6vw;
     }
 
@@ -115,8 +125,8 @@ body {
     }
 }
 
-@media (max-width: 700px) {
-    #logo {
+@media (max-width: 376px) {
+    #logo, #logo img {
         width: 10vw;
     }
 
@@ -242,106 +252,3 @@ body {
         border-right: 3px solid #d2d8f980;
     }
 }
-    /*
-    .menu-list {
-        position: fixed;
-        inset: 0 0 0 30%;
-        padding: 15vh 10vw;
-        list-style-type: none;
-        justify-content: space-around;
-        background-color: rgb(16, 14, 45);
-        transform: translateX(100%);
-    }
-
-    .menu-list li {
-        padding: 10%;
-    }
-
-    .menu-list a {
-        text-decoration: none;
-        color: #D0D6F9;
-    }
-
-    .selected {
-        border-bottom: none;
-        border-right: 3px solid #d0d6f9;
-    }
-
-    .unselected {
-        border-bottom: none;
-        border-right: 3px solid #d0d6f900;
-    }
-
-    .unselected:hover{
-        border-bottom: none;
-        border-right: 3px solid #d2d8f980;
-    }
-
-    #menu {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    float: right;
-    width: 40px;
-    height: 80px;
-    cursor: pointer;
-    transition: all .5s ease-in-out;
-    border: 0px solid #fff; 
-  }
-  
-  #menu1 {
-      width: 32px;
-      height: 4px;
-      background: rgba(255, 255, 255, 0.6);
-      border-radius: 5px;
-      box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.35), 
-      0px 0px 10px rgb(255, 255, 255, 0.2), 
-      0px 0px 15px rgb(255, 255, 255, 0.2),
-      0px 0px 20px rgb(255, 255, 255, 0.2),
-      0px 0px 30px rgb(255, 255, 255, 0.2),
-      0px 0px 40px rgb(255, 255, 255, 0.1),
-      0px 0px 55px rgb(255, 255, 255, 0.1),
-      0px 0px 75px rgb(255, 255, 255, 0.1);
-      transition: all .5s ease-in-out;
-  }
-  
-  #menu1::before,
-  #menu1::after {
-    content: '';
-    position: absolute;
-    width: 32px;
-    height: 4px;
-    background: rgb(255, 255, 255, 0.6);
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.35), 
-    0px 0px 10px rgb(255, 255, 255, 0.2), 
-    0px 0px 15px rgb(255, 255, 255, 0.2),
-    0px 0px 20px rgb(255, 255, 255, 0.2),
-    0px 0px 30px rgb(255, 255, 255, 0.2),
-    0px 0px 40px rgb(255, 255, 255, 0.1),
-    0px 0px 55px rgb(255, 255, 255, 0.1),
-    0px 0px 75px rgb(255, 255, 255, 0.1);
-    transition: all .5s ease-in-out;
-  }
-  #menu1::before {
-    transform: translateY(-9px);
-  }
-  #menu1::after {
-    transform: translateY(9px);
-  }
-  
-  #menu.open #menu1 {
-    transform: translateX(-50px);
-    background: transparent;
-    box-shadow: none;
-  }
-  #menu.open #menu1::before {
-    transform: rotate(45deg) translate(35px, -35px);
-  }
-  #menu.open #menu1::after {
-    transform: rotate(-45deg) translate(35px, 35px);
-  }*/
-
-
-
