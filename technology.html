@@ -5,27 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400&family=Bellefair&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/technology.css">
     <title>Technology</title>
 </head>
 <body>
-    <header class="navbar">
+    <header id="navbar">
         <div>
-            <img id="logo" src="assets/shared/logo.svg" alt="">
-            <svg id="line" width="40vw" height="1">
-                <rect width="40vw" height="1" style="fill:rgb(255, 255, 255);"/>
+            <a id="logo" href="index.html"><img src="assets/shared/logo.svg" alt="Logo"></a>
+            <svg id="line" width="27vw" height="1">
+                <rect width="27vw" height="1" style="fill:rgb(255, 255, 255);"/>
             </svg>
         </div>
-        <nav>
+        <nav id="nav">
+            <button id="button-mobile"><span id="hamburger"></span></button>
             <ul>
-                <li class="unselected" ><a href="index.html"><b>00</b> HOME</a></li>
+                <li class="selected" ><a href="index.html"><b>00</b> HOME</a></li>
                 <li class="unselected" ><a href="destination.html"><b>01</b> DESTINATION</a></li>
                 <li class="unselected" ><a href="crew.html"><b>02</b> CREW</a></li>
-                <li class="selected" ><a href="technology.html"><b>03</b> TECHNOLOGY</a></li>
+                <li class="unselected" ><a href="technology.html"><b>03</b> TECHNOLOGY</a></li>
             </ul>
         </nav>
-        <!--<div class="hamburguer"><img src="assets/shared/icon-hamburger.svg" alt=""></div>-->
     </header>
     <main>
         <header>
@@ -39,19 +42,20 @@
                 
                 <nav>
                     <ul class="botoes">
-                        <a class="button">1</a>
-                        <a class="button">2</a>
-                        <a class="button">3</a>
+                        <a class="button" id="btn1" onclick="technologyBtn1()">1</a>
+                        <a class="button" id="btn2" onclick="technologyBtn2()">2</a>
+                        <a class="button" id="btn3" onclick="technologyBtn3()">3</a>
                     </ul>
                 </nav>
                 <div class="bloco">
                     <h6 class="texto2">THE TERMINOLOGY…</h6>
-                    <h1 class="texto3">LAUNCH VEHICLE</h1>
-                    <p class="texto4">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
+                    <h1 id="technologyTitle" class="texto3">LAUNCH VEHICLE</h1>
+                    <p id="technologyParagraph" class="texto4">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
                 </div>
-                <img class="img" src="/assets/technology/image-launch-vehicle-portrait.jpg" alt="">
+                <img id="technologyImg" class="img" src="/assets/technology/image-launch-vehicle-portrait.jpg" alt="">
             </section>
         </article>
     </main>
+    <script src="js/script.js"></script>
 </body>
 </html>
