@@ -39,36 +39,35 @@
         </header>
             <div class="container">
                 <div class="lua">
-                    <img src="/assets/destination/image-moon.png" alt="">
+                    <img id="destinationImg" src="/assets/destination/image-moon.png" alt="">
                 </div>
             
                 <div class="bloco">
                     
-                    <div class="texto2">
-                
-                        <li>MOON</li>
-                        <li>MARS</li>
-                        <li>EUROPA</li>
-                        <li>TITAN</li>
-                    </div>
+                    <ul class="texto2">
+                        <li><a onclick="destinationMoon()">MOON</a></li>
+                        <li><a onclick="destinationMars()">MARS</a></li>
+                        <li><a onclick="destinationEuropa()">EUROPA</a></li>
+                        <li><a onclick="destinationTitan()">TITAN</a></li>
+                    </ul>
 
-                    <div class="texto3">
-                        <p>MOON</p>
+                    <div id="destinationTitle" class="texto3">
+                        <h1>MOON</h1>
                     </div>
             
-                    <div class="texto4">
+                    <div id="destinationParagraph" class="texto4">
                         <p>See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
                     </div>
 
                 <div class="texto56">
                     <div class="texto5">
                         <div class="linha2"><p>AVG. DISTANCE</p></div>
-                        <div class="linha4"><p>384,400 km</p></div> 
+                        <div id="destinationDistance" class="linha4"><p>384,400 km</p></div> 
                     </div>
 
                         <div class="texto6">
                              <div class="linha1"><p>EST. TRAVEL TIME</p></div>
-                             <div class="linha3"><p>3 DAYS</p></div>
+                             <div  id="destinationDays" class="linha3"><p>3 DAYS</p></div>
                         </div>
                 </div>   
             </div>   
