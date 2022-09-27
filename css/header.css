@@ -6,12 +6,11 @@
 body {
     width: 100vw;
     height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow: auto;
 }
 
 #navbar {
-    padding: 1vw 0% 1% 6%;
+    padding: 1vw 0vw 1vw 6vw;
     width: 94%;
     height: 10vh;
     display: flex;
@@ -60,6 +59,7 @@ body {
     text-decoration: none;
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(40.7742px);
+    -webkit-backdrop-filter: blur(40.7742px);
     padding-right: 6vw;
 }
 
@@ -147,6 +147,7 @@ body {
         justify-content: flex-end;
         background: rgba(255, 255, 255, 0);
         backdrop-filter: blur(0px);
+        padding: 1vw 6vw 1vw 0vw;
     }
     
     #line {
@@ -186,29 +187,28 @@ body {
     }
 
     #nav.active {
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         width: 70vw;
-        height: 100vh;
-        background-color: #ff4d946b;
+        height: 99vh;
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(40.7742px);
+        -webkit-backdrop-filter: blur(40.7742px);
         flex-direction: column;
         padding-right: 0;
         z-index: 10;
-        overflow-x: hidden;
-        padding-top: 1vh;
+        margin: 0;
     }
 
     #nav.active #button-mobile {
         align-self: flex-end;
-        height: 10vh;
+        height: 12vh;
         align-items: center;
-        background-color: rgba(0, 255, 255, 0.406);
         padding-right: 6vw;
     }
     #nav.active ul {
         display: block;
-        background-color: #0b3100bb;
         width: 100%;
         height: 100%;
         flex-direction: column;
@@ -216,11 +216,9 @@ body {
 
     #nav.active li{
         display: flex;
-        width: calc(100% - 3px);
+        width: 100%;
         height: 10%;
         flex-direction: row;
-        padding-left: 15%;
-        overflow-y: auto;
     }
 
     #nav.active li a{
@@ -233,21 +231,31 @@ body {
 
     #nav.active ul li b{
         display: flex;
-        padding-right: 10%;
+        width: 12.5%;
+        padding-left: 15%;
     }
-
+    
     #nav.active .selected {
         border-bottom: 0;
-        border-right: 3px solid #fff;
+        border-bottom: 0;
+    }
+    
+    #nav.active .selected a {
+        border-bottom: 0;
+        border-right: 4px solid #fff;
+    }
+    
+    #nav.active .unselected a {
+        border-bottom: 0;
+        border-right: 4px solid #d0d6f900;
     }
     
     #nav.active .unselected {
         border-bottom: 0;
-        border-right: 3px solid #d0d6f900;
     }
-    
-    #nav.active .unselected:hover{
+
+    #nav.active .unselected a:hover{
         border-bottom: 0;
-        border-right: 3px solid #d2d8f980;
+        border-right: 4px solid #d2d8f980;
     }
 }
