@@ -99,13 +99,19 @@ article {
     flex-direction: row;
     justify-content: space-between;
     margin-left: 170px;
-    width: 10vh;
+    width: 10vw;
+
+}
+
+.botoes  li{
+    display: flex;
+    width: 100%;
 
 }
 
 .button {
-    width: 15px;
-    height: 15px;
-    background-color: #979797;
+    width: 30px;
+    height: 30px;
+    background-color: #ff0000;
     border-radius: 60px;
 }
