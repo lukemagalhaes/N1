@@ -11,7 +11,7 @@ body {
 
 
 .texto1 {
-    margin: 70px;
+    margin: 7vh;
     margin-left: 17vh;
     display: flex;
     flex-direction: row;
@@ -54,10 +54,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 32px;
+    font-size: 2rem;
     opacity: 1;
     border: solid white;
-    border-width: 1px;
+    border-width: 0.2vh;
     
 }
 
@@ -77,14 +77,14 @@ body {
 
 .texto2 {
     color: #FFFFFF;
-    font-size:20px;
+    font-size: 1.4rem;
     opacity: 0.5;
     font-family: "Bellefair",serif;
 }
 
 .texto3 {
     color: #FFFFFF;
-    font-size: 50px;
+    font-size: 3rem;
     font-family: "Bellefair",serif;
 }
 
@@ -95,4 +95,42 @@ body {
     opacity: 0.7;
     font-family: "Barlow",sans-serif;
     width: 45vh;
+}
+
+
+@media (max-width: 1200px) {
+    main {
+        width: 100%;
+        height: 100%;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botoes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 15vh;
+        width: 35vh;
+        margin: 0;
+    }
+
+    .img {
+        width: 100%;
+        height: 50vh;
+    }
+    
+    .bloco {
+        display: flex;
+        align-items: center;
+    }
+    
+    .texto4 {
+        text-align: center;
+    }
 }
