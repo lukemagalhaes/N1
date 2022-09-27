@@ -10,7 +10,7 @@ body {
 
 .texto1{
     margin: 70px;
-    margin-left: 170px;
+    width: 31vw;
     display: flex;
     flex-direction: row;
     font-size: 2rem;
@@ -23,35 +23,42 @@ body {
     margin-right: 5px;
 }
 
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
 .bloco{
     display: flex;
     flex-direction: column;
-    margin-left: 1060px;
-    margin-top: 0;
+    justify-content: flex-end;
+    width: 27vw;
+    gap: 5vh;
+    
 }
+
 
 .texto2{
     display: flex;
     list-style-type: none;
     flex-direction: row;
-    margin-bottom: 60px;
     text-decoration: none;
+    gap: 50px;
     
 }
 
 
 .texto3{
-     margin-bottom: 40px;
-     margin-left: 25px;
-     font-size: 110px;
-     letter-spacing: .15rem;
-     font-family: "Bellefair",serif;
+    width: 20vw;
+    font-size: 110px;
+    letter-spacing: .15rem;
+    font-family: "Bellefair",serif;
 }
 
 .texto4{
     margin-bottom: 40px;
-    height: 20px;
-    width: 500px;
+    width: 27vw;
     line-height: 190%;
     font-family: "Barlow",sans-serif;
     color: var(--fog--clr);
@@ -63,13 +70,10 @@ body {
 .texto56{
     display: flex;
     flex-direction: row;
-    margin-top: 220px;
+    justify-content: space-between;  
+    
 }
 
-.texto6{
-    margin-left: 40px;
-
-}
 
 .linha1{
     margin-bottom: 10px;

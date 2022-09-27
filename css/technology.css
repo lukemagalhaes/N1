@@ -1,5 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     width: 100vw;
     height: 100vh;
     background-image: url(/assets/technology/background-technology-desktop.jpg);
+}
+
+
+.texto1 {
+    margin: 70px;
+    margin-left: 17vh;
+    display: flex;
+    flex-direction: row;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: .15rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #FFFFFF;
+}
+
+.o3 {
+    color: darkslategray;
+    font-size: 2.2vw;
+}
+
+.line {
+    letter-spacing: 0.3vw;
+    font-size: 2vw;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #FFFFFF;
+}
+
+.botoes {
+    display: flex;
+    height: 35vh;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 17vh;
+}
+
+.button {
+    width: 9vh;
+    height: 9vh;
+    opacity: 1;
+    border-radius: 60px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    opacity: 1;
+    border: solid white;
+    border-width: 1px;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bloco {
+    width: 50vh;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.texto2 {
+    color: #FFFFFF;
+    font-size:20px;
+    opacity: 0.5;
+    font-family: "Bellefair",serif;
+}
+
+.texto3 {
+    color: #FFFFFF;
+    font-size: 50px;
+    font-family: "Bellefair",serif;
+}
+
+.texto4{
+    color: #FFFFFF;
+    font-size: 1rem;
+    line-height: 1.9;
+    opacity: 0.7;
+    font-family: "Barlow",sans-serif;
+    width: 45vh;
 }

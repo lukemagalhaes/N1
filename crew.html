@@ -5,19 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400&family=Bellefair&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/crew.css">
     <title>Crew</title>
 </head>
 <body>
-    <header class="navbar">
+    <header id="navbar">
         <div>
             <img id="logo" src="assets/shared/logo.svg" alt="">
-            <svg id="line" width="40vw" height="1">
-                <rect width="40vw" height="1" style="fill:rgb(255, 255, 255);"/>
+            <svg id="line" width="27vw" height="1">
+                <rect width="27vw" height="1" style="fill:rgb(255, 255, 255);"/>
             </svg>
         </div>
-        <nav>
+        <nav id="nav">
+            <button id="button-mobile"><span id="hamburger"></span></button>
             <ul>
                 <li class="unselected" ><a href="index.html"><b>00</b> HOME</a></li>
                 <li class="unselected" ><a href="destination.html"><b>01</b> DESTINATION</a></li>
@@ -25,28 +29,37 @@
                 <li class="unselected" ><a href="technology.html"><b>03</b> TECHNOLOGY</a></li>
             </ul>
         </nav>
-        <!--<div class="hamburguer"><img src="assets/shared/icon-hamburger.svg" alt=""></div>-->
     </header>
     <main>
-        <header>
-            <h2>01  Pick your destination</h2>
+        <header class="header">
+            <div class="texto1">
+                <p class="o2">02</p>
+                <h2 class="line">MEET YOUR CREW</h2>
+            </div>
+            <!--<h2 class="line">02  MEET YOUR CREW</h2>-->
         </header>
-        <article>
-            <section>
-                <h3>Commander</h3>
-                <h1>Douglas Hurley</h1>
-                <p>Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
-            </section>
+        <article class="article">
+            <div class="container">
+                <section class="bloco">
+                    <h3 class="texto2">Commander</h3>
+                    <h1 class="texto3">DOUGLAS HURLEY</h1>
+                    <p class="texto4">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+                </section>
+                <div class="img">
+                    <img src="/assets/crew/image-douglas-hurley.png" alt="">
+                </div>
+            </div>
             <nav>
-                <ul>
-                    <li>0</li>
-                    <li>0</li>
-                    <li>0</li>
-                    <li>0</li>
+                <ul class="botoes">
+                    <a class="button"></a>
+                    <a class="button"></a>
+                    <a class="button"></a>
+                    <a class="button"></a>
                 </ul>
             </nav>
-            <img src="/assets/crew/image-douglas-hurley.png" alt="">
+            
         </article>
+        
     </main>
 </body>
 </html>
