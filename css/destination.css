@@ -9,8 +9,8 @@ body {
 
 
 .texto1{
-    margin: 70px;
-    width: 31vw;
+    margin: 7vh;
+    width: 70vh;
     display: flex;
     flex-direction: row;
     font-size: 2rem;
@@ -20,9 +20,12 @@ body {
 }
 .o1{
     color: darkslategray;
-    margin-right: 5px;
+    margin-right: 1rem;
 }
-
+.lua {
+    width: 45vh;
+    height: 45vh;
+}
 .container {
     display: flex;
     justify-content: space-around;
@@ -44,26 +47,28 @@ body {
     list-style-type: none;
     flex-direction: row;
     text-decoration: none;
-    gap: 50px;
-    
+    gap: 10%;
+    opacity: 0.8;
+    font-size: 1vw;
+    width: 30vh;
 }
 
 
 .texto3{
-    width: 20vw;
-    font-size: 110px;
+    font-size: 7vw;
     letter-spacing: .15rem;
     font-family: "Bellefair",serif;
 }
 
 .texto4{
-    margin-bottom: 40px;
-    width: 27vw;
+    margin-bottom: 4vh;
     line-height: 190%;
     font-family: "Barlow",sans-serif;
     color: var(--fog--clr);
-    font-size: 1.22rem;
+    font-size: 0.9vw;
     line-height: 1.8em;
+    opacity: 0.8;
+    width: 50vh;
 
 }
 
@@ -71,30 +76,31 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;  
-    
+    width: 50vh;
 }
 
 
 .linha1{
-    margin-bottom: 10px;
+    margin-bottom: 1vh;
     font-family: "Barlow Condensed",sans-serif;
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: .1em;
     color: var(--half-transparent--clr);
+    font-size: 0.8vw;
 
 }
 
 .linha2{
-    margin-bottom: 10px;
+    margin-bottom: 1vh;
     font-family: "Barlow Condensed",sans-serif;
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: .1em;
     color: var(--half-transparent--clr);
-
+    font-size: 0.8vw;
 }
 
 .linha3{
@@ -103,6 +109,7 @@ body {
     font-size: 2rem;
     text-transform: uppercase;
     color: var(--light--clr);
+    font-size: 1.5vw;
 }
 
 .linha4{
@@ -111,5 +118,132 @@ body {
     font-size: 2rem;
     text-transform: uppercase;
     color: var(--light--clr);
+    font-size: 1.5vw;
 }
 
+
+
+@media (max-width: 1200px) {
+   .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .bloco {
+    width: 70vh;
+    display: center;
+    align-items: center;
+    margin-top: -4vh;
+   }
+   
+   .texto1 {
+    width: 70vh;
+    height: 2vh;
+    font-size: 1.3rem;
+    font-weight: 300;
+    letter-spacing: .15rem;
+    margin-top: 3vh;
+   }
+   
+   .texto2 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+   }
+
+   .texto3 {
+    font-size: 5.5rem;
+    margin-top: 0vh;
+   }
+
+   .texto4 {
+    width: 60vh;
+    text-align: center;
+    margin-top: -3vh;
+    font-size: 1rem;
+   }
+
+   
+   .lua{
+    width: 20vh;
+    height: 20vh;
+    margin-bottom: 5vh;
+   }
+
+   .texto5 {
+    width: 20vh;
+
+   }
+   .linha2 {
+    display: flex;
+    justify-content: center;
+    font-size: 0.80rem;
+    opacity: 0.7;
+   }
+
+   .linha1 {
+    display: flex;
+    justify-content: center;
+    font-size: 0.80rem;
+    opacity: 0.7;
+   }
+
+   .linha3 {
+    display: flex;
+    justify-content: center;
+    
+   }
+   .linha4 {
+    display: flex;
+    justify-content: center;
+    
+   }
+
+   .texto56 {
+    align-items: center;
+    width: 45vh;
+   }
+
+   .traco {
+    width: 80%;
+    height: 0.2vh;
+    background-color: #383B4B;
+    display: flex;
+    justify-content: center;
+    margin-top: -3vh;
+
+   }
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 376px) {
+    .container {
+        width: 55vh;
+    }
+    .lua {
+        width: 25vh;
+        height: 25vh;
+        margin-bottom: 8vh;
+    }
+
+    .bloco {
+        width: 40vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .texto4 {
+        width: 50vh;
+    }
+
+    .traco {
+        
+    }
+}
