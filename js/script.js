@@ -71,6 +71,10 @@ var crewTitle = document.getElementById("crewTitle");
 var crewProfession = document.getElementById("crewProfession");
 var crewParagraph = document.getElementById("crewParagraph");;
 var crewImg = document.getElementById("crewImg");
+var crewSelect1 = document.getElementById("crewSelect1")
+var crewSelect2 = document.getElementById("crewSelect2")
+var crewSelect3 = document.getElementById("crewSelect3")
+var crewSelect4 = document.getElementById("crewSelect4")
 
 
 function crewBtn1() {
@@ -78,6 +82,10 @@ function crewBtn1() {
   crewProfession.textContent = "Commander "
   crewParagraph.textContent = "Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2."
   crewImg.src = "/assets/crew/image-douglas-hurley.png"
+  crewSelect1.style.opacity = "1";
+  crewSelect2.style.opacity = "0.17";
+  crewSelect3.style.opacity = "0.17";
+  crewSelect4.style.opacity = "0.17";
 }
 
 function crewBtn2() {
@@ -85,6 +93,10 @@ function crewBtn2() {
   crewProfession.textContent = "Mission Specialist "
   crewParagraph.textContent = "Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist."
   crewImg.src = "/assets/crew/image-mark-shuttleworth.png"
+  crewSelect1.style.opacity = "0.17";
+  crewSelect2.style.opacity = "1";
+  crewSelect3.style.opacity = "0.17";
+  crewSelect4.style.opacity = "0.17";
 }
 
 function crewBtn3() {
@@ -92,6 +104,10 @@ function crewBtn3() {
   crewProfession.textContent = "PILOT"
   crewParagraph.textContent = "Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer. "
   crewImg.src = "/assets/crew/image-victor-glover.png"
+  crewSelect1.style.opacity = "0.17";
+  crewSelect2.style.opacity = "0.17";
+  crewSelect3.style.opacity = "1";
+  crewSelect4.style.opacity = "0.17";
 }
 
 function crewBtn4() {
@@ -99,4 +115,8 @@ function crewBtn4() {
   crewProfession.textContent = "Flight Engineer"
   crewParagraph.textContent = "Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space. "
   crewImg.src = "/assets/crew/image-anousheh-ansari.png"
+  crewSelect1.style.opacity = "0.17";
+  crewSelect2.style.opacity = "0.17";
+  crewSelect3.style.opacity = "0.17";
+  crewSelect4.style.opacity = "1";
 }
