@@ -2,34 +2,61 @@ body {
     width: 100vw;
     height: 100vh;
     background-image: url(/assets/destination/background-destination-desktop.jpg);
-    background-color: rgb(14, 14, 136);
-    color: antiquewhite;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #0B0D17;
+    color: #ffffff;;
     font-family: "Barlow Condensed",sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+#page {
+    width: 100vw;
+    height: 15vh;
+    position: absolute;
+    display: flex;
+    display: flex;
+    align-items: flex-end;
+    font-size: 2vw;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 0.4vw;
+    font-weight: 400;
+    padding-left: 10%;
 }
 
+#page b{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    opacity: 0.25;
+    margin-right: 1.6%;
+}
 
 .texto1{
     margin: 7vh;
-    width: 70vh;
+    width: 80vh;
     display: flex;
     flex-direction: row;
-    font-size: 2rem;
+    font-size: 2vw;
     font-weight: 300;
-    letter-spacing: .15rem;
+    letter-spacing: .15vw;
 
 }
 .o1{
     color: darkslategray;
-    margin-right: 1rem;
+    margin-right: 1vw;
 }
 .lua {
     width: 45vh;
     height: 45vh;
+    display: flex;
+    align-self: flex-end;
 }
 .container {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+    height: 80vh;
 }
 
 .bloco{
@@ -38,6 +65,7 @@ body {
     justify-content: flex-end;
     width: 27vw;
     gap: 5vh;
+    height: 100%;
     
 }
 
@@ -50,14 +78,19 @@ body {
     gap: 10%;
     opacity: 0.8;
     font-size: 1vw;
-    width: 30vh;
+    width: 35vh;
+    height: 2.5vw;
 }
-
-
+.texto2 li{
+    width: 100%;
+}
 .texto3{
-    font-size: 4vw;
-    letter-spacing: .15rem;
+    font-size: 7vw;
+    letter-spacing: .15vw;
     font-family: "Bellefair",serif;
+}
+.texto3 h1 {
+    font-size: 7vw;
 }
 
 .texto4{
@@ -69,7 +102,7 @@ body {
     line-height: 1.8em;
     opacity: 0.8;
     width: 50vh;
-
+    height: 10%;
 }
 
 .texto56{
@@ -95,10 +128,10 @@ body {
 .linha2{
     margin-bottom: 1vh;
     font-family: "Barlow Condensed",sans-serif;
-    font-size: 1rem;
+    font-size: 1vw;
     text-transform: uppercase;
     font-weight: 400;
-    letter-spacing: .1em;
+    letter-spacing: .1vw;
     color: var(--half-transparent--clr);
     font-size: 0.8vw;
 }
@@ -128,13 +161,40 @@ body {
 
 }
 
+#destinationMoon, #destinationMars, #destinationEuropa, #destinationTitan {
+    display: flex;
+    width: 100%;
+    height: 2.5vw;
+    border-bottom: thick solid #ffffff00;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
+#destinationMoon {
+    border-bottom: thick solid rgb(255, 255, 255);
+}
 
+#destinationMoon:hover, #destinationMars:hover, #destinationEuropa:hover, #destinationTitan:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
 @media (max-width: 1200px) {
+    #page {
+        position: relative;
+        height: 7vh;
+    }
+    .lua{
+        display: flex;
+        align-self: center;
+        margin-top: 10%;
+    }
    .container {
     display: flex;
     flex-direction: column;
+    margin-top: 15%;
     width: 100%;
+    height: 100%;
     justify-content: center;
     align-items: center;
    }
@@ -176,8 +236,8 @@ body {
 
    
    .lua{
-    width: 25vh;
-    height: 25vh;
+    width: 20vw;
+    height: 20vw;
     margin-top: -3vh;
     margin-bottom: 8vh;
    }
@@ -215,7 +275,10 @@ body {
 
    .texto56 {
     align-items: center;
-    width: 45vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+
    }
 
    .traco {

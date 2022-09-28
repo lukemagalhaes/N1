@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400&family=Bellefair&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400;600;700&family=Bellefair&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/destination.css">
     <title>Destination</title>
@@ -30,45 +30,40 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <header>
-            <div class="texto1">   
-                    <div class="o1"><p>01</p></div>
-                    <p> PICK YOUR DESTINATION</p>
+    <section id="page">
+            <b>01</b>PICK YOUR DESTINATION
+    </section>
+        <main>
+        <div class="container">
+            <div class="lua">
+                <img class="lua" id="destinationImg" src="/assets/destination/image-moon.png" alt="">
             </div>
-        </header>
-            <div class="container">
-                <div >
-                    <img class="lua" id="destinationImg" src="/assets/destination/image-moon.png" alt="">
+            <div class="bloco">
+                <ul class="texto2">
+                    <li><a id="destinationMoon" onclick="destinationMoon()">MOON</a></li>
+                    <li><a id="destinationMars" onclick="destinationMars()">MARS</a></li>
+                    <li><a id="destinationEuropa" onclick="destinationEuropa()">EUROPA</a></li>
+                    <li><a id="destinationTitan" onclick="destinationTitan()">TITAN</a></li>
+                </ul>
+
+                <div id="destinationTitle" class="texto3">
+                    <h1>MOON</h1>
                 </div>
             
-                <div class="bloco">
-                    
-                    <ul class="texto2">
-                        <li><a onclick="destinationMoon()">MOON</a></li>
-                        <li><a onclick="destinationMars()">MARS</a></li>
-                        <li><a onclick="destinationEuropa()">EUROPA</a></li>
-                        <li><a onclick="destinationTitan()">TITAN</a></li>
-                    </ul>
-
-                    <div id="destinationTitle" class="texto3">
-                        <h1>MOON</h1>
-                    </div>
-            
-                    <div id="destinationParagraph" class="texto4">
-                        <p>See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
-                    </div>
-                    <div class="traco"></div>
+                <div id="destinationParagraph" class="texto4">
+                    <p>See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+                </div>
+                <div class="traco"></div>
                 <div class="texto56">
                     <div class="texto5">
-                        <div class="linha2"><p>AVG. DISTANCE</p></div>
-                        <div id="destinationDistance" class="linha4"><p>384,400 km</p></div> 
+                    <div class="linha2"><p>AVG. DISTANCE</p></div>
+                    <div id="destinationDistance" class="linha4"><p>384,400 km</p></div> 
                     </div>
 
-                        <div class="texto6">
-                             <div class="linha1"><p>EST. TRAVEL TIME</p></div>
-                             <div  id="destinationDays" class="linha3"><p>3 DAYS</p></div>
-                        </div>
+                    <div class="texto6">
+                        <div class="linha1"><p>EST. TRAVEL TIME</p></div>
+                        <div  id="destinationDays" class="linha3"><p>3 DAYS</p></div>
+                    </div>
                 </div>   
             </div>   
         </div>
