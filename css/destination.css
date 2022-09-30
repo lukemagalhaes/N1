@@ -12,10 +12,9 @@ body {
 
 }
 #page {
-    width: 100vw;
+    width: 80vw;
     height: 15vh;
     position: absolute;
-    display: flex;
     display: flex;
     align-items: flex-end;
     font-size: 2vw;
@@ -99,7 +98,7 @@ body {
     font-family: "Barlow",sans-serif;
     color: var(--fog--clr);
     font-size: 0.9vw;
-    line-height: 1.8em;
+    line-height: 1.8vw;
     opacity: 0.8;
     width: 50vh;
     height: 10%;
@@ -119,7 +118,7 @@ body {
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 400;
-    letter-spacing: .1em;
+    letter-spacing: .1vw;
     color: var(--half-transparent--clr);
     font-size: 0.8vw;
 
@@ -139,7 +138,7 @@ body {
 .linha3{
     font-family: "Bellefair",serif;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 2vw;
     text-transform: uppercase;
     color: var(--light--clr);
     font-size: 1.5vw;
@@ -148,9 +147,8 @@ body {
 .linha4{
     font-family: "Bellefair",serif;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 2vw;
     text-transform: uppercase;
-    color: var(--light--clr);
     font-size: 1.5vw;
 }
 
@@ -164,7 +162,7 @@ body {
 #destinationMoon, #destinationMars, #destinationEuropa, #destinationTitan {
     display: flex;
     width: 100%;
-    height: 2.5vw;
+    height: 100%;
     border-bottom: thick solid #ffffff00;
     cursor: pointer;
     align-items: center;
@@ -203,15 +201,15 @@ body {
     width: 70vh;
     display: center;
     align-items: center;
-    margin-top: -4vh;
+    margin-top: 4vh;
    }
    
    .texto1 {
     width: 70vh;
     height: 2vh;
-    font-size: 1.3rem;
+    font-size: 1.3vw;
     font-weight: 300;
-    letter-spacing: .15rem;
+    letter-spacing: .15vw;
     margin-top: 3vh;
    }
    
@@ -219,7 +217,7 @@ body {
     width: 50%;
     display: flex;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 1vw;
    }
 
    .texto3 {
@@ -230,8 +228,8 @@ body {
    .texto4 {
     width: 60vh;
     text-align: center;
-    margin-top: -3vh;
-    font-size: 1rem;
+    margin-top: 3vh;
+    font-size: 1vw;
    }
 
    
@@ -263,13 +261,13 @@ body {
    .linha3 {
     display: flex;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 2vw;
     
    }
    .linha4 {
     display: flex;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 2vw;
     
    }
 
@@ -287,12 +285,16 @@ body {
     background-color: #383B4B;
     display: flex;
     justify-content: center;
-    margin-top: -3vh;
+    margin-top: 3vh;
 
    }
 }
 
 @media (max-width: 768px) {
+    #page {
+        position: relative;
+        height: 7vh;
+    }
     .container {
         display: flex;
         flex-direction: column;
@@ -305,15 +307,15 @@ body {
         width: 50vh;
         display: center;
         align-items: center;
-        margin-top: -4vh;
+        margin-top: 4vh;
        }
        
        .texto1 {
         width: 50vh;
         height: 1vh;
-        font-size: 1.3rem;
+        font-size: 1.3vw;
         font-weight: 300;
-        letter-spacing: .15rem;
+        letter-spacing: 1.5vw;
         margin-top: 3vh;
        }
        
@@ -321,26 +323,32 @@ body {
         width: 50%;
         display: flex;
         justify-content: center;
-        font-size: 1rem;
+        font-size: 3vw;
        }
     
        .texto3 {
-        font-size: 1.5rem;
+        font-size: 10.5vw;
         margin-top: 0vh;
        }
     
        .texto4 {
-        width: 40vh;
+        width: 75vw;
+        height: 10vh;
         text-align: center;
-        margin-top: -3vh;
-        font-size: 1rem;
+        margin-top: 3vh;
+        font-size: 2.5vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 3.5vw;
+        margin: 0;
+        padding: 0;
        }
     
        
        .lua{
-        width: 16vh;
-        height: 16vh;
-        margin-bottom: 5vh;
+        width: 40vw;
+        height: 40vw;
+        margin-bottom: 0vh;
        }
     
        .texto5 {
@@ -350,34 +358,36 @@ body {
        .linha2 {
         display: flex;
         justify-content: center;
-        font-size: 0.80rem;
+        font-size: 2.8vw;
         opacity: 0.7;
        }
     
        .linha1 {
         display: flex;
         justify-content: center;
-        font-size: 0.80rem;
+        font-size: 2.8vw;
         opacity: 0.7;
        }
     
        .linha3 {
         display: flex;
         justify-content: center;
+        font-size: 3.8vw;
         
        }
        .linha4 {
         display: flex;
         justify-content: center;
         width: 20vh;
+        font-size: 3.8vw;
         
        }
     
        .texto56 {
         align-items: center;
-        width: 25vh;
+        width: 60vw;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap: 2vh;
        }
     
@@ -387,11 +397,20 @@ body {
         background-color: #383B4B;
         display: flex;
         justify-content: center;
-        margin-top: -3vh;
+        margin-top: 3vh;
     
 }
 
 @media (max-width: 376px) {
+    #page{
+        padding: 0;
+        width: 100vw;
+        height: 2.5vh;
+        letter-spacing: 0.9vw;
+        font-size: 4.5vw;
+        justify-content: center;
+        font-style: normal;
+    }
     .container {
         display: flex;
         flex-direction: column;
@@ -401,10 +420,9 @@ body {
        }
     
        .bloco {
-        width: 30vh;
         display: center;
         align-items: center;
-        margin-top: -4vh;
+        justify-content: center;
        }
        
        .texto1 {
@@ -420,29 +438,41 @@ body {
        }
        
        .texto2 {
-        width: 40vh;
+        width: 60vw;
+        height: 5vh;
         display: flex;
         justify-content: center;
-        font-size: 1rem;
+        font-size: 5vw;
+        display: flex;
+        align-items: center;
+       }
+       .texto2 ul, .texto2 ul li, .texto2 ul li a{
+        height: 5vh;
+        width: 100%;
        }
     
        .texto3 {
-        font-size: 1.5rem;
+        font-size: 15vw;
         margin-top: 0vh;
+        font-style: normal;
+        margin: 0;
        }
     
        .texto4 {
-        width: 30vh;
+        width: 80vw;
+        height: 20vh;
         text-align: center;
-        margin-top: -3vh;
-        font-size: 1rem;
+        font-size: 4.5vw;
+        line-height: 6vw;
+        font-weight: 400;
+        font-style: normal;
+        margin: 10% 0;
        }
     
        
        .lua{
         width: 20vh;
         height: 20vh;
-        margin-bottom: 5vh;
        }
     
        
@@ -450,31 +480,34 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 0.80rem;
+        font-size: 5vw;
         opacity: 0.7;
        }
     
        .linha1 {
         display: flex;
         justify-content: center;
-        font-size: 0.80rem;
+        font-size: 5vw;
         opacity: 0.7;
        }
     
        .linha3 {
         display: flex;
         justify-content: center;
+        font-size: 7vw;
+        width: 100vw;
         
        }
        .linha4 {
         display: flex;
+        font-size: 7vw;
+        width: 100%;
         justify-content: center;
-
+        text-align: center;
        }
-    
        .texto56 {
         align-items: center;
-        width: 25vh;
+        width: 100vw;
         display: flex;
         flex-direction: column;
         gap: 2vh;

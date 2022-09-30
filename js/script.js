@@ -10,6 +10,7 @@ btnMobile.addEventListener('click', toggleMenu);
 var technologyTitle = document.getElementById("technologyTitle");
 var technologyParagraph = document.getElementById("technologyParagraph");
 var technologyImg = document.getElementById("technologyImg");
+var technologyImgLandscape = document.getElementById("technologyImgLandscape")
 var btn1 = document.getElementById("btn1");
 var btn2 = document.getElementById("btn2");
 var btn3 = document.getElementById("btn3");
@@ -17,7 +18,8 @@ var btn3 = document.getElementById("btn3");
 function technologyBtn1() {
   technologyTitle.textContent = "LAUNCH VEHICLE";
   technologyParagraph.textContent = "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!";
-  technologyImg.src = `/assets/technology/image-launch-vehicle-landscape.jpg`;
+  technologyImg.srcset = `/assets/technology/image-launch-vehicle-portrait.jpg`;
+  technologyImgLandscape.src = `/assets/technology/image-launch-vehicle-landscape.jpg`;
   btn1.style.backgroundColor = "#fff"
   btn1.style.color = "#000"
   btn2.style.backgroundColor = "#ffffff00"
@@ -29,7 +31,8 @@ function technologyBtn1() {
 function technologyBtn2() {
   technologyTitle.textContent = "SPACEPORT";
   technologyParagraph.textContent = "A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.";
-  technologyImg.src = `/assets/technology/image-spaceport-landscape.jpg`;
+  technologyImg.srcset = `/assets/technology/image-spaceport-portrait.jpg`;
+  technologyImgLandscape.src = `/assets/technology/image-spaceport-landscape.jpg`;
   btn1.style.backgroundColor = "#ffffff00"
   btn1.style.color = "#fff"
   btn2.style.backgroundColor = "#ffffff"
@@ -41,7 +44,8 @@ function technologyBtn2() {
 function technologyBtn3() {
   technologyTitle.textContent = "SPACE CAPSULE";
   technologyParagraph.textContent = "A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.";
-  technologyImg.src = `/assets/technology/image-space-capsule-landscape.jpg`;
+  technologyImg.srcset = `/assets/technology/image-space-capsule-portrait.jpg`;
+  technologyImgLandscape.src = `/assets/technology/image-space-capsule-landscape.jpg`;
   btn1.style.backgroundColor = "#ffffff00"
   btn1.style.color = "#fff"
   btn2.style.backgroundColor = "#ffffff00"

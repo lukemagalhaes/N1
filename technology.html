@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400&family=Bellefair&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400;600;700&family=Bellefair&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/technology.css">
     <title>Technology</title>
@@ -31,29 +31,28 @@
         </nav>
     </header>
     <main>
-        <header>
-            <div class="texto1">
-                <p class="o3">03</p>
-                <p class="line">SPACE LAUNCH 101</p>
-            </div>
+        <header id="page">
+            <b>03</b>SPACE LAUNCH 101
         </header>
-        <article>
-            
-            <section class="container">      
-                <nav>
-                    <ul class="botoes">
-                        <a class="button" id="btn1" onclick="technologyBtn1()">1</a>
-                        <a class="button" id="btn2" onclick="technologyBtn2()">2</a>
-                        <a class="button" id="btn3" onclick="technologyBtn3()">3</a>
-                    </ul>
-                </nav>
-                <div class="bloco">
-                    <h6 class="texto2">THE TERMINOLOGY…</h6>
-                    <h1 id="technologyTitle" class="texto3">LAUNCH VEHICLE</h1>
-                    <p id="technologyParagraph" class="texto4">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
-                </div>
-                <img id="technologyImg" class="img" src="/assets/technology/image-launch-vehicle-portrait.jpg" alt="">   
+        <article id="article">   
+            <nav>
+                <ul id="button-list">
+                    <a class="button" id="btn1" onclick="technologyBtn1()">1</a>
+                    <a class="button" id="btn2" onclick="technologyBtn2()">2</a>
+                    <a class="button" id="btn3" onclick="technologyBtn3()">3</a>
+                </ul>
+            </nav>
+            <section id="section">
+                <h6 id="subtitle">THE TERMINOLOGY…</h6>
+                <h1 id="technologyTitle">LAUNCH VEHICLE</h1>
+                <p id="technologyParagraph">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
             </section>
+            <picture>
+                <source id="technologyImg" srcset="/assets/technology/image-launch-vehicle-portrait.jpg" media="(min-width: 768px)">
+                <img id="technologyImgLandscape" src="/assets/technology/image-launch-vehicle-landscape.jpg" alt="MDN">
+               </picture>
+            <!--<img id="technologyImg" class="portrait" src="/assets/technology/image-launch-vehicle-portrait.jpg" alt="">
+            <img id="technologyImg" class="lanscape" src="/assets/technology/image-launch-vehicle-landscape.jpg" alt="">-->
         </article>
     </main>
     <script src="js/script.js"></script>
